@@ -27,6 +27,7 @@ public interface IDatabaseCrud<T> {
 		return null;
 	}
 	
+	// gövdeli method
 	default Session databaseConnectionHibernate() {
 		return HibernateUtil.getSessionfactory().openSession();
 	}
